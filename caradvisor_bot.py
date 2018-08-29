@@ -19,7 +19,7 @@ def caradvice(bot, update):
     caradvisor_weather_message = get_current_weather_message()
     caradvisor_weather_forecast_six_hours_message = get_weather_forecast_for_six_hours()
 
-    cardvisor_traffic_jam_message = get_jams() + ': пробки ' + get_jam_level() + ' балла'
+    cardvisor_traffic_jam_message = get_jams() + ': jams ' + get_jam_level() + ' points'
     cardvisor_traffic_jam_message += ' (' + get_jams_icon_color() + ') '
     jam_prediction_six_hours_ahead = predict_function(predict_stat, predict_start=3, predict_end=12, predict_step=3)
     jam_prediction_by_day_type_message = day_type()
