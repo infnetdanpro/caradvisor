@@ -37,6 +37,10 @@ def closed_roads(bot, update):
 
     update.message.reply_text(caradvisor_closed_roads_message)
 
+def test_keyboard(bot, update):
+    custom_keyboard = [['top-left', 'top-right'], ['bottom-left', 'bottom-right']]
+    reply_markup = telegram.ReplyKeyboardMarkup(custom_keyboard)
+    update.message.send_message(chat_id=chat_id, text="Custom Keyboard Test", reply_markup=reply_markup)
 
 def chat(bot, update):
     text = update.message.text
