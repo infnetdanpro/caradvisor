@@ -30,7 +30,7 @@ def caradvice(bot, update):
     update.message.reply_text(cardvisor_traffic_jam_message)
     update.message.reply_text(jam_prediction_six_hours_ahead)
     update.message.reply_text(jam_prediction_by_day_type_message)
-    update.message.reply_photo('http://static-maps.yandex.ru/1.x/?ll=37.620070,55.753630&spn=0.34,0.34&l=map,trf') #caption='Карта пробок'
+    update.message.reply_photo('http://static-maps.yandex.ru/1.x/?ll=37.620070,55.753630&spn=0.34,0.34&l=map,trf')
 
 
 def closed_roads(bot, update):
