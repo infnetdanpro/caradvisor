@@ -54,6 +54,7 @@ def main():
 
     upd.dispatcher.add_handler(CommandHandler('caradvice', caradvice))
     upd.dispatcher.add_handler(CommandHandler('closed_roads', closed_roads))
+    upd.dispatcher.add_handler(CommandHandler('test_keyboard', test_keyboard))
     upd.dispatcher.add_handler(MessageHandler(Filters.text, chat))
 
     upd.start_polling()
