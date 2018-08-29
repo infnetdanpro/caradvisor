@@ -1,6 +1,6 @@
 __pycache__/
 *.log
-settings.py
 env
 *.csv
 *.txt
+traffic_img
